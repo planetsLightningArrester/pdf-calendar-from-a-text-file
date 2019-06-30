@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        .mainTitle {
+            font: x-large Verdana, Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: white;
+            color: black;
+            margin: auto;
+            width: 33%;
+        }
+
+        /* Styling for the footer */
+
+        div.footer {
+            font: small Verdana, Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .topDiv {
+            display: -webkit-box;
+            display: -webkit-flex;
+            -webkit-flex-wrap: wrap;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        /* Styling for the overall table */
+
+        .mainTable {
+            font: 100% Verdana, Arial, Helvetica, sans-serif;
+            table-layout: fixed;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        /* Styling for the column headers (days of the week) */
+
+        .mainTh {
+            padding: 0 0.5em;
+            text-align: center;
+            background-color: white;
+        }
+
+        .mainFdsh {
+            padding: 0 0.5em;
+            text-align: center;
+            background-color: white;
+            color: #e22828;
+        }
+
+        /* Styling for the individual cells (days) */
+
+        .mainTd {
+            font-size: 11px;
+            padding: 0.25em 0.25em;
+            width: 15%;
+            height: 80px;
+            text-align: left;
+            vertical-align: top;
+
+        }
+
+        /* Styling for the date numbers */
+
+        .date {
+            font-size: large;
+            padding: 0.25em 0.25em;
+            text-align: left;
+            vertical-align: top;
+            font-weight: bold;
+        }
+
+        .dateold {
+            font-size: large;
+            padding: 0.25em 0.25em;
+            text-align: left;
+            vertical-align: top;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .mainFds {
+            font-size: 11px;
+            padding: 0.25em 0.25em;
+            width: 15%;
+            height: 80px;
+            text-align: left;
+            vertical-align: top;
+            padding: 0.25em 0.25em;
+            text-align: left;
+            vertical-align: top;
+            background-color: #ffc4c4;
+            color: #e22828;
+        }
+
+        /*Small things*/
+        .miniTitle {
+            font: small Verdana, Arial, Helvetica, sans-serif;
+            text-align: center;
+            height: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        .miniTable {
+            font: smaller Verdana, Arial, Helvetica, sans-serif;
+            table-layout: fixed;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .miniTh {
+            text-align: center;
+            background-color: white;
+            font-size: 8px;
+        }
+
+        .miniFdsh {
+            text-align: center;
+            background-color: white;
+            color: #e22828;
+            font-size: 8px;
+        }
+
+        .miniTd {
+            font-size: 8px;
+            padding: 0.05em 0.05em;
+            width: 5%;
+            height: 20px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .miniFds {
+            font-size: 8px;
+            padding: 0.05em 0.05em;
+            width: 5%;
+            height: 10px;
+            text-align: left;
+            vertical-align: top;
+            padding: 0.05em 0.05em;
+            text-align: left;
+            vertical-align: top;
+            background-color: #ffc4c4;
+            color: #e22828;
+        }
+
+        .event {
+            text-align: left;
+            font-size: 17px;
+            font-weight: bold;
+            margin-block-start: 1px;
+            margin-block-end: 1px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topDiv">
+        <!--Left Calendar-->
+        <div style="width: 33%;">
+            <div class="miniTitle">Março 2017</div>
+            <table class="miniTable" border="1">
+                <tr>
+                    <th class="miniFdsh">Dom</th>
+                    <th class="miniTh">Seg</th>
+                    <th class="miniTh">Ter</th>
+                    <th class="miniTh">Qua</th>
+                    <th class="miniTh">Qui</th>
+                    <th class="miniTh">Sex</th>
+                    <th class="miniFdsh">Sab</th>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="dateold">26</span></td>
+                    <td class="miniTd"><span class="dateold">27</span></td>
+                    <td class="miniTd"><span class="dateold">28</span></td>
+                    <td class="miniTd"><span class="dateold">29</span></td>
+                    <td class="miniTd"><span class="dateold">30</span></td>
+                    <td class="miniTd"><span class="dateold">31</span></td>
+                    <td class="miniFds"><span class="date">1</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="date">2</span></td>
+                    <td class="miniTd"><span class="date">3</span></td>
+                    <td class="miniTd"><span class="date">4</span></td>
+                    <td class="miniTd"><span class="date">5</span></td>
+                    <td class="miniTd"><span class="date">6</span></td>
+                    <td class="miniTd"><span class="date">7</span></td>
+                    <td class="miniFds"><span class="date">8</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="date">9</span></td>
+                    <td class="miniTd"><span class="date">10</span></td>
+                    <td class="miniTd"><span class="date">11</span></td>
+                    <td class="miniTd"><span class="date">12</span></td>
+                    <td class="miniTd"><span class="date">13</span></td>
+                    <td class="miniTd"><span class="date">14</span></td>
+                    <td class="miniFds"><span class="date">15</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="date">16</span></td>
+                    <td class="miniTd"><span class="date">17</span></td>
+                    <td class="miniTd"><span class="date">18</span></td>
+                    <td class="miniTd"><span class="date">19</span></td>
+                    <td class="miniTd"><span class="date">20</span></td>
+                    <td class="miniTd"><span class="date">21</span></td>
+                    <td class="miniFds"><span class="date">22</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="date">23</span></td>
+                    <td class="miniTd"><span class="date">24</span></td>
+                    <td class="miniTd"><span class="date">25</span></td>
+                    <td class="miniTd"><span class="date">26</span></td>
+                    <td class="miniTd"><span class="date">27</span></td>
+                    <td class="miniTd"><span class="date">28</span></td>
+                    <td class="miniFds"><span class="date">29</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="date">30</span></td>
+                    <td class="miniTd"><span class="dateold">1</span></td>
+                    <td class="miniTd"><span class="dateold">2</span></td>
+                    <td class="miniTd"><span class="dateold">3</span></td>
+                    <td class="miniTd"><span class="dateold">4</span></td>
+                    <td class="miniTd"><span class="dateold">5</span></td>
+                    <td class="miniFds"><span class="dateold">6</span></td>
+                </tr>
+            </table>
+        </div>
+        <!--Main calendar Title-->
+        <p class="mainTitle">Maio 2017</p>
+        <!--Right Calendar-->
+        <div style="width: 33%;">
+            <div class="miniTitle">Junho 2017</div>
+            <table class="miniTable" border="1">
+                <tr>
+                    <th class="miniFdsh">Dom</th>
+                    <th class="miniTh">Seg</th>
+                    <th class="miniTh">Ter</th>
+                    <th class="miniTh">Qua</th>
+                    <th class="miniTh">Qui</th>
+                    <th class="miniTh">Sex</th>
+                    <th class="miniFdsh">Sab</th>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="dateold">28</span></td>
+                    <td class="miniTd"><span class="dateold">29</span></td>
+                    <td class="miniTd"><span class="dateold">30</span></td>
+                    <td class="miniTd"><span class="dateold">31</span></td>
+                    <td class="miniTd"><span class="date">1</span></td>
+                    <td class="miniTd"><span class="date">2</span></td>
+                    <td class="miniFds"><span class="date">3</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="date">4</span></td>
+                    <td class="miniTd"><span class="date">5</span></td>
+                    <td class="miniTd"><span class="date">6</span></td>
+                    <td class="miniTd"><span class="date">7</span></td>
+                    <td class="miniTd"><span class="date">8</span></td>
+                    <td class="miniTd"><span class="date">9</span></td>
+                    <td class="miniFds"><span class="date">10</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="date">11</span></td>
+                    <td class="miniTd"><span class="date">12</span></td>
+                    <td class="miniTd"><span class="date">13</span></td>
+                    <td class="miniTd"><span class="date">14</span></td>
+                    <td class="miniTd"><span class="date">15</span></td>
+                    <td class="miniTd"><span class="date">16</span></td>
+                    <td class="miniFds"><span class="date">17</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="date">18</span></td>
+                    <td class="miniTd"><span class="date">19</span></td>
+                    <td class="miniTd"><span class="date">20</span></td>
+                    <td class="miniTd"><span class="date">21</span></td>
+                    <td class="miniTd"><span class="date">22</span></td>
+                    <td class="miniTd"><span class="date">23</span></td>
+                    <td class="miniFds"><span class="date">24</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="date">25</span></td>
+                    <td class="miniTd"><span class="date">26</span></td>
+                    <td class="miniTd"><span class="date">27</span></td>
+                    <td class="miniTd"><span class="date">28</span></td>
+                    <td class="miniTd"><span class="date">29</span></td>
+                    <td class="miniTd"><span class="date">30</span></td>
+                    <td class="miniFds"><span class="dateold">1</span></td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <!--Main calendar-->
+    <table class="mainTable" border="1">
+        <tr>
+            <th class="mainFdsh">Dom</th>
+            <th class="mainTh">Seg</th>
+            <th class="mainTh">Ter</th>
+            <th class="mainTh">Qua</th>
+            <th class="mainTh">Qui</th>
+            <th class="mainTh">Sex</th>
+            <th class="mainFdsh">Sab</th>
+        </tr>
+        <tr>
+            <td class="mainFds"><span class="dateold">30</span></td>
+            <td class="mainTd"><span class="date">1</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\cake.png" height="20px">  Joao</p><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">2</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">3</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">4</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">5</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainFds"><span class="date">6</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+        </tr>
+        <tr>
+            <td class="mainFds"><span class="date">7</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">8</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">9</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">10</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">11</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">12</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainFds"><span class="date">13</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+        </tr>
+        <tr>
+            <td class="mainFds"><span class="date">14</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">15</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">16</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">17</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">18</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">19</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainFds"><span class="date">20</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+        </tr>
+        <tr>
+            <td class="mainFds"><span class="date">21</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">22</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">23</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">24</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">25</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">26</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainFds"><span class="date">27</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+        </tr>
+        <tr>
+            <td class="mainFds"><span class="date">28</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">29</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">30</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="date">31</span><p class = "event"><img src="file:\C:\Users\franc\Desktop\Fernando\cald\src\plane.png" height="20px">  rio de janeiro</p></td>
+            <td class="mainTd"><span class="dateold">1</span></td>
+            <td class="mainTd"><span class="dateold">2</span></td>
+            <td class="mainFds"><span class="dateold">3</span></td>
+        </tr>
+        
+    </table>
+</body>
+
+</html>

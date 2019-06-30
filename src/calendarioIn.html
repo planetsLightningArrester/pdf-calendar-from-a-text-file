@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        .mainTitle {
+            font: x-large Verdana, Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: white;
+            color: black;
+            margin: auto;
+            width: 33%;
+        }
+
+        /* Styling for the footer */
+
+        div.footer {
+            font: small Verdana, Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .topDiv {
+            display: -webkit-box;
+            display: -webkit-flex;
+            -webkit-flex-wrap: wrap;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        /* Styling for the overall table */
+
+        .mainTable {
+            font: 100% Verdana, Arial, Helvetica, sans-serif;
+            table-layout: fixed;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        /* Styling for the column headers (days of the week) */
+
+        .mainTh {
+            padding: 0 0.5em;
+            text-align: center;
+            background-color: white;
+        }
+
+        .mainFdsh {
+            padding: 0 0.5em;
+            text-align: center;
+            background-color: white;
+            color: #e22828;
+        }
+
+        /* Styling for the individual cells (days) */
+
+        .mainTd {
+            font-size: 11px;
+            padding: 0.25em 0.25em;
+            width: 15%;
+            height: 80px;
+            text-align: left;
+            vertical-align: top;
+
+        }
+
+        /* Styling for the date numbers */
+
+        .date {
+            font-size: large;
+            padding: 0.25em 0.25em;
+            text-align: left;
+            vertical-align: top;
+            font-weight: bold;
+        }
+
+        .dateold {
+            font-size: large;
+            padding: 0.25em 0.25em;
+            text-align: left;
+            vertical-align: top;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .mainFds {
+            font-size: 11px;
+            padding: 0.25em 0.25em;
+            width: 15%;
+            height: 80px;
+            text-align: left;
+            vertical-align: top;
+            padding: 0.25em 0.25em;
+            text-align: left;
+            vertical-align: top;
+            background-color: #ffc4c4;
+            color: #e22828;
+        }
+
+        /*Small things*/
+        .miniTitle {
+            font: small Verdana, Arial, Helvetica, sans-serif;
+            text-align: center;
+            height: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        .miniTable {
+            font: smaller Verdana, Arial, Helvetica, sans-serif;
+            table-layout: fixed;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .miniTh {
+            text-align: center;
+            background-color: white;
+            font-size: 8px;
+        }
+
+        .miniFdsh {
+            text-align: center;
+            background-color: white;
+            color: #e22828;
+            font-size: 8px;
+        }
+
+        .miniTd {
+            font-size: 8px;
+            padding: 0.05em 0.05em;
+            width: 5%;
+            height: 20px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .miniFds {
+            font-size: 8px;
+            padding: 0.05em 0.05em;
+            width: 5%;
+            height: 10px;
+            text-align: left;
+            vertical-align: top;
+            padding: 0.05em 0.05em;
+            text-align: left;
+            vertical-align: top;
+            background-color: #ffc4c4;
+            color: #e22828;
+        }
+
+        .event {
+            text-align: left;
+            font-size: 17px;
+            font-weight: bold;
+            margin-block-start: 1px;
+            margin-block-end: 1px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topDiv">
+        <!--Left Calendar-->
+        <div style="width: 33%;">
+            <div class="miniTitle">Januaryl 2019l</div>
+            <table class="miniTable" border="1">
+                <tr>
+                    <th class="miniFdsh">Sunlh</th>
+                    <th class="miniTh">Monlh</th>
+                    <th class="miniTh">Tuelh</th>
+                    <th class="miniTh">Wedlh</th>
+                    <th class="miniTh">Thulh</th>
+                    <th class="miniTh">Frilh</th>
+                    <th class="miniFdsh">Satlh</th>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="00lc">00lh</span></td>
+                    <td class="miniTd"><span class="01lc">01lh</span></td>
+                    <td class="miniTd"><span class="02lc">02lh</span></td>
+                    <td class="miniTd"><span class="03lc">03lh</span></td>
+                    <td class="miniTd"><span class="04lc">04lh</span></td>
+                    <td class="miniTd"><span class="05lc">05lh</span></td>
+                    <td class="miniFds"><span class="06lc">06lh</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="07lc">07lh</span></td>
+                    <td class="miniTd"><span class="08lc">08lh</span></td>
+                    <td class="miniTd"><span class="09lc">09lh</span></td>
+                    <td class="miniTd"><span class="10lc">10lh</span></td>
+                    <td class="miniTd"><span class="11lc">11lh</span></td>
+                    <td class="miniTd"><span class="12lc">12lh</span></td>
+                    <td class="miniFds"><span class="13lc">13lh</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="14lc">14lh</span></td>
+                    <td class="miniTd"><span class="15lc">15lh</span></td>
+                    <td class="miniTd"><span class="16lc">16lh</span></td>
+                    <td class="miniTd"><span class="17lc">17lh</span></td>
+                    <td class="miniTd"><span class="18lc">18lh</span></td>
+                    <td class="miniTd"><span class="19lc">19lh</span></td>
+                    <td class="miniFds"><span class="20lc">20lh</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="21lc">21lh</span></td>
+                    <td class="miniTd"><span class="22lc">22lh</span></td>
+                    <td class="miniTd"><span class="23lc">23lh</span></td>
+                    <td class="miniTd"><span class="24lc">24lh</span></td>
+                    <td class="miniTd"><span class="25lc">25lh</span></td>
+                    <td class="miniTd"><span class="26lc">26lh</span></td>
+                    <td class="miniFds"><span class="27lc">27lh</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="28lc">28lh</span></td>
+                    <td class="miniTd"><span class="29lc">29lh</span></td>
+                    <td class="miniTd"><span class="30lc">30lh</span></td>
+                    <td class="miniTd"><span class="31lc">31lh</span></td>
+                    <td class="miniTd"><span class="32lc">32lh</span></td>
+                    <td class="miniTd"><span class="33lc">33lh</span></td>
+                    <td class="miniFds"><span class="34lc">34lh</span></td>
+                </tr>
+                llwi<tr>
+                    <td class="miniFds"><span class="35lc">35lh</span></td>
+                    <td class="miniTd"><span class="36lc">36lh</span></td>
+                    <td class="miniTd"><span class="37lc">37lh</span></td>
+                    <td class="miniTd"><span class="38lc">38lh</span></td>
+                    <td class="miniTd"><span class="39lc">39lh</span></td>
+                    <td class="miniTd"><span class="40lc">40lh</span></td>
+                    <td class="miniFds"><span class="41lc">41lh</span></td>
+                </tr>llwf
+            </table>
+        </div>
+        <!--Main calendar Title-->
+        <p class="mainTitle">Januarym 2019m</p>
+        <!--Right Calendar-->
+        <div style="width: 33%;">
+            <div class="miniTitle">Januaryr 2019r</div>
+            <table class="miniTable" border="1">
+                <tr>
+                    <th class="miniFdsh">Sunrh</th>
+                    <th class="miniTh">Monrh</th>
+                    <th class="miniTh">Tuerh</th>
+                    <th class="miniTh">Wedrh</th>
+                    <th class="miniTh">Thurh</th>
+                    <th class="miniTh">Frirh</th>
+                    <th class="miniFdsh">Satrh</th>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="00rc">00rh</span></td>
+                    <td class="miniTd"><span class="01rc">01rh</span></td>
+                    <td class="miniTd"><span class="02rc">02rh</span></td>
+                    <td class="miniTd"><span class="03rc">03rh</span></td>
+                    <td class="miniTd"><span class="04rc">04rh</span></td>
+                    <td class="miniTd"><span class="05rc">05rh</span></td>
+                    <td class="miniFds"><span class="06rc">06rh</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="07rc">07rh</span></td>
+                    <td class="miniTd"><span class="08rc">08rh</span></td>
+                    <td class="miniTd"><span class="09rc">09rh</span></td>
+                    <td class="miniTd"><span class="10rc">10rh</span></td>
+                    <td class="miniTd"><span class="11rc">11rh</span></td>
+                    <td class="miniTd"><span class="12rc">12rh</span></td>
+                    <td class="miniFds"><span class="13rc">13rh</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="14rc">14rh</span></td>
+                    <td class="miniTd"><span class="15rc">15rh</span></td>
+                    <td class="miniTd"><span class="16rc">16rh</span></td>
+                    <td class="miniTd"><span class="17rc">17rh</span></td>
+                    <td class="miniTd"><span class="18rc">18rh</span></td>
+                    <td class="miniTd"><span class="19rc">19rh</span></td>
+                    <td class="miniFds"><span class="20rc">20rh</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="21rc">21rh</span></td>
+                    <td class="miniTd"><span class="22rc">22rh</span></td>
+                    <td class="miniTd"><span class="23rc">23rh</span></td>
+                    <td class="miniTd"><span class="24rc">24rh</span></td>
+                    <td class="miniTd"><span class="25rc">25rh</span></td>
+                    <td class="miniTd"><span class="26rc">26rh</span></td>
+                    <td class="miniFds"><span class="27rc">27rh</span></td>
+                </tr>
+                <tr>
+                    <td class="miniFds"><span class="28rc">28rh</span></td>
+                    <td class="miniTd"><span class="29rc">29rh</span></td>
+                    <td class="miniTd"><span class="30rc">30rh</span></td>
+                    <td class="miniTd"><span class="31rc">31rh</span></td>
+                    <td class="miniTd"><span class="32rc">32rh</span></td>
+                    <td class="miniTd"><span class="33rc">33rh</span></td>
+                    <td class="miniFds"><span class="34rc">34rh</span></td>
+                </tr>
+                rlwi<tr>
+                    <td class="miniFds"><span class="35rc">35rh</span></td>
+                    <td class="miniTd"><span class="36rc">36rh</span></td>
+                    <td class="miniTd"><span class="37rc">37rh</span></td>
+                    <td class="miniTd"><span class="38rc">38rh</span></td>
+                    <td class="miniTd"><span class="39rc">39rh</span></td>
+                    <td class="miniTd"><span class="40rc">40rh</span></td>
+                    <td class="miniFds"><span class="41rc">41rh</span></td>
+                </tr>rlwf
+            </table>
+        </div>
+    </div>
+    <!--Main calendar-->
+    <table class="mainTable" border="1">
+        <tr>
+            <th class="mainFdsh">Sunm</th>
+            <th class="mainTh">Monm</th>
+            <th class="mainTh">Tuem</th>
+            <th class="mainTh">Wedm</th>
+            <th class="mainTh">Thum</th>
+            <th class="mainTh">Frim</th>
+            <th class="mainFdsh">Satm</th>
+        </tr>
+        <tr>
+            <td class="mainFds"><span class="00c">00h</span>even00</td>
+            <td class="mainTd"><span class="01c">01h</span>even01</td>
+            <td class="mainTd"><span class="02c">02h</span>even02</td>
+            <td class="mainTd"><span class="03c">03h</span>even03</td>
+            <td class="mainTd"><span class="04c">04h</span>even04</td>
+            <td class="mainTd"><span class="05c">05h</span>even05</td>
+            <td class="mainFds"><span class="06c">06h</span>even06</td>
+        </tr>
+        <tr>
+            <td class="mainFds"><span class="07c">07h</span>even07</td>
+            <td class="mainTd"><span class="08c">08h</span>even08</td>
+            <td class="mainTd"><span class="09c">09h</span>even09</td>
+            <td class="mainTd"><span class="10c">10h</span>even10</td>
+            <td class="mainTd"><span class="11c">11h</span>even11</td>
+            <td class="mainTd"><span class="12c">12h</span>even12</td>
+            <td class="mainFds"><span class="13c">13h</span>even13</td>
+        </tr>
+        <tr>
+            <td class="mainFds"><span class="14c">14h</span>even14</td>
+            <td class="mainTd"><span class="15c">15h</span>even15</td>
+            <td class="mainTd"><span class="16c">16h</span>even16</td>
+            <td class="mainTd"><span class="17c">17h</span>even17</td>
+            <td class="mainTd"><span class="18c">18h</span>even18</td>
+            <td class="mainTd"><span class="19c">19h</span>even19</td>
+            <td class="mainFds"><span class="20c">20h</span>even20</td>
+        </tr>
+        <tr>
+            <td class="mainFds"><span class="21c">21h</span>even21</td>
+            <td class="mainTd"><span class="22c">22h</span>even22</td>
+            <td class="mainTd"><span class="23c">23h</span>even23</td>
+            <td class="mainTd"><span class="24c">24h</span>even24</td>
+            <td class="mainTd"><span class="25c">25h</span>even25</td>
+            <td class="mainTd"><span class="26c">26h</span>even26</td>
+            <td class="mainFds"><span class="27c">27h</span>even27</td>
+        </tr>
+        <tr>
+            <td class="mainFds"><span class="28c">28h</span>even28</td>
+            <td class="mainTd"><span class="29c">29h</span>even29</td>
+            <td class="mainTd"><span class="30c">30h</span>even30</td>
+            <td class="mainTd"><span class="31c">31h</span>even31</td>
+            <td class="mainTd"><span class="32c">32h</span>even32</td>
+            <td class="mainTd"><span class="33c">33h</span>even33</td>
+            <td class="mainFds"><span class="34c">34h</span>even34</td>
+        </tr>
+        mlwi<tr>
+            <td class="mainFds"><span class="35c">35h</span>even35</td>
+            <td class="mainTd"><span class="36c">36h</span>even36</td>
+            <td class="mainTd"><span class="37c">37h</span>even37</td>
+            <td class="mainTd"><span class="38c">38h</span>even38</td>
+            <td class="mainTd"><span class="39c">39h</span>even39</td>
+            <td class="mainTd"><span class="40c">40h</span>even40</td>
+            <td class="mainFds"><span class="41c">41h</span>even41</td>
+        </tr>mlwf
+    </table>
+</body>
+
+</html>
